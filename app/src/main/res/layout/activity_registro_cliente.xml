@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Panel azul con título -->
+
+    <!-- Campo cédula -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarRegistro"
+        android:layout_width="415dp"
+        android:layout_height="122dp"
+        android:background="@android:color/holo_blue_dark"
+        android:title="Registro"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCedula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cédula"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRegistro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputCedula"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo nombre -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutCedula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNombre"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo teléfono -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTelefono"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo clave -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutClave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Clave"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutTelefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputClave"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón registrar -->
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Registrar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutClave" />
+
+    <Button
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Volver al Menú"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

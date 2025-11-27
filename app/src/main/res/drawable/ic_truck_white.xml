@@ -1,0 +1,25 @@
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Cuerpo del camión -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M2,32h40v18H2z" />
+
+    <!-- Cabina -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,32h18v18H40z" />
+
+    <!-- Ruedas -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,50a4,4 0 1,0 8,0a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,50a4,4 0 1,0 8,0a4,4 0 1,0 -8,0" />
+</vector>

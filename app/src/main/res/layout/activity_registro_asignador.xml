@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTituloRegistroAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro Asignador"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/etCedulaAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cédula"
+        android:inputType="number"
+        android:layout_marginTop="40dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etNombreAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etCorreoAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etClaveAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnRegistrarAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Asignador"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginTop="32dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnVolverMenuAsignador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:padding="12dp" />
+</LinearLayout>
+

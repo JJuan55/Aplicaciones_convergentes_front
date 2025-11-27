@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado moderno con avatar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:background="#0D47A1"
+            android:gravity="center_vertical"
+            android:elevation="8dp"
+            android:layout_marginBottom="30dp"
+            android:clipToPadding="false"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                app:tint="@android:color/white"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar Encomienda"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Campos de texto estilo tarjeta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etTipoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de producto"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etValorDeclarado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor declarado"
+                android:inputType="number"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Prioridad de entrega -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prioridad de entrega"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spPrioridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etOrigen"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Origen"
+                    android:padding="16dp"
+                    android:background="@drawable/rounded_edittext"/>
+
+                <LinearLayout
+                    android:id="@+id/btnSeleccionarOrigen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:background="#0D47A1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:src="@android:drawable/ic_menu_mylocation"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:tint="@android:color/white"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mapa"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etDestino"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Destino"
+                    android:padding="16dp"
+                    android:background="@drawable/rounded_edittext"/>
+
+                <LinearLayout
+                    android:id="@+id/btnSeleccionarDestino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:background="#0D47A1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:src="@android:drawable/ic_menu_mylocation"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:tint="@android:color/white"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mapa"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNombreDestinatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre destinatario"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etTelefonoDestinatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono destinatario"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Propina -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Propina: 5000"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Botón Registrar Encomienda -->
+            <LinearLayout
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:elevation="4dp"
+                android:background="#0D47A1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:src="@android:drawable/ic_input_add"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:tint="@android:color/white"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Encomienda"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

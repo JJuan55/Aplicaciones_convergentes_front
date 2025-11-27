@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Panel superior azul -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="16dp"
+        android:text="Inicio de Sesión"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Contenedor centrado para los campos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal">
+
+        <!-- Campo de Cédula -->
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            android:inputType="number"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Error de Cédula -->
+        <TextView
+            android:id="@+id/tvErrorCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Campo de Clave -->
+        <EditText
+            android:id="@+id/etClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Clave"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Error de Clave -->
+        <TextView
+            android:id="@+id/tvErrorClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Botón de Iniciar Sesión -->
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:padding="12dp"
+            android:text="Iniciar Sesión"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnVolverMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Volver al Menú"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

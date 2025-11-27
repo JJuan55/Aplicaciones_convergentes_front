@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- Panel superior -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:padding="16dp"
+        android:text="Pagar Encomienda"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- Texto informativo -->
+    <TextView
+        android:id="@+id/tvInfoPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el método de pago:"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000" />
+
+    <!-- Opciones de pago -->
+    <RadioGroup
+        android:id="@+id/rgMetodosPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta de crédito / débito"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbNequi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nequi"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbEfectivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pago en efectivo"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmarPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar pago"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1565C0"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
+

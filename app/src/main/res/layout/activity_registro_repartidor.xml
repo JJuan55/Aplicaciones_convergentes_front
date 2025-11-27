@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Repartidor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <!-- Cédula -->
+        <EditText
+            android:id="@+id/etCedulaRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            android:inputType="number" />
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/etNombreRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/etCorreoRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/etTelefonoRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone" />
+
+        <!-- Clave -->
+        <EditText
+            android:id="@+id/etClaveRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <!-- Tipo de vehículo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de vehículo:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTipoVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCarro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carro" />
+
+            <RadioButton
+                android:id="@+id/rbMoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moto"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Modelo -->
+        <EditText
+            android:id="@+id/etModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Modelo del vehículo"
+            android:inputType="text" />
+
+        <!-- Matrícula -->
+        <EditText
+            android:id="@+id/etMatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matrícula"
+            android:inputType="text" />
+
+        <!-- Botón de registrar -->
+        <Button
+            android:id="@+id/btnRegistrarRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Repartidor"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp" />
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/btnVolverMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al menú"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>

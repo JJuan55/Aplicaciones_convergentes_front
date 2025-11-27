@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tvTitleEncomiendas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Encomiendas sin asignar"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Loader -->
+    <ProgressBar
+        android:id="@+id/progressLoadingEncomiendas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="12dp" />
+
+    <!-- Texto vacío -->
+    <TextView
+        android:id="@+id/tvEmptyEncomiendas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay encomiendas sin asignar."
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView (ÚNICO LISTADO) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEncomiendasNoAsignadas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnVolverHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF9800"
+        android:text="Volver al Inicio"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>
+
+

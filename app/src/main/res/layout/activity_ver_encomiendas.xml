@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="12dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tvTituloEncomiendas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis Encomiendas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <!-- Lista con item personalizado -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEncomiendas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnVolverHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al Inicio"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
