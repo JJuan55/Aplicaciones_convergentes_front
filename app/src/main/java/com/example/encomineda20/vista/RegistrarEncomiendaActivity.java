@@ -63,12 +63,10 @@ public class RegistrarEncomiendaActivity extends AppCompatActivity {
         etTelefonoDestinatario = findViewById(R.id.etTelefonoDestinatario);
         spPrioridad = findViewById(R.id.spPrioridad);
 
-        // Botones ahora son LinearLayout
         LinearLayout btnGuardar = findViewById(R.id.btnRegistrar);
         LinearLayout btnSelOrigen = findViewById(R.id.btnSeleccionarOrigen);
         LinearLayout btnSelDestino = findViewById(R.id.btnSeleccionarDestino);
 
-        // Spinner prioridad
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_dropdown_item,
                 new String[]{"Normal", "Alta"}
@@ -84,7 +82,6 @@ public class RegistrarEncomiendaActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-        // Mapas
         mapaOrigenLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -108,11 +105,13 @@ public class RegistrarEncomiendaActivity extends AppCompatActivity {
         // Listeners de los "botones" LinearLayout
         btnSelOrigen.setOnClickListener(v -> {
             Intent i = new Intent(this, SeleccionarUbicacionActivity.class);
+            i.putExtra("modo", "origen");
             mapaOrigenLauncher.launch(i);
         });
 
         btnSelDestino.setOnClickListener(v -> {
             Intent i = new Intent(this, SeleccionarUbicacionActivity.class);
+            i.putExtra("modo", "destino");
             mapaDestinoLauncher.launch(i);
         });
 

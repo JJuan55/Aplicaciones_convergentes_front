@@ -38,9 +38,6 @@ public class MapaRutaActivity extends FragmentActivity implements OnMapReadyCall
 
         LatLng bogotaCentro = new LatLng(4.6486, -74.2479);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(bogotaCentro, 12));
-
-        // 🔹 En un caso real usarías Geocoder para convertir dirección a coordenadas:
-        // Aquí simulamos puntos distintos:
         LatLng puntoRecogida = new LatLng(4.65, -74.08);
         LatLng puntoEntrega = new LatLng(4.63, -74.1);
 

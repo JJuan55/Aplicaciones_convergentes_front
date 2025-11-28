@@ -44,8 +44,6 @@ public class SeleccionarRepartidorActivity extends AppCompatActivity {
     private SessionManagerAsignador session;
 
     private Button btnVerInfo;
-
-
     private RepartidorDTO repartidorSeleccionado = null;
 
     @Override

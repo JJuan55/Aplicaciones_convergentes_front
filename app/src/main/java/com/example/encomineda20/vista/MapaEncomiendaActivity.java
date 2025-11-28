@@ -30,7 +30,7 @@ public class MapaEncomiendaActivity extends AppCompatActivity implements OnMapRe
 
     private GoogleMap mMap;
     private double latOrigen, lonOrigen, latDestino, lonDestino;
-    private TextView tvDistancia; // Opcional si quieres mostrar distancia en esta Activity
+    private TextView tvDistancia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,6 @@ public class MapaEncomiendaActivity extends AppCompatActivity implements OnMapRe
         LatLng origen = new LatLng(latOrigen, lonOrigen);
         LatLng destino = new LatLng(latDestino, lonDestino);
 
-        // Marcadores origen y destino
         mMap.addMarker(new MarkerOptions()
                 .position(origen)
                 .title("Recogida")
@@ -89,7 +88,6 @@ public class MapaEncomiendaActivity extends AppCompatActivity implements OnMapRe
                 .geodesic(true);
         mMap.addPolyline(polylineOptions);
 
-        // Marcadores azules puntos intermedios
         for (int i = 1; i < puntos.size() - 1; i++) {
             mMap.addMarker(new MarkerOptions()
                     .position(puntos.get(i))

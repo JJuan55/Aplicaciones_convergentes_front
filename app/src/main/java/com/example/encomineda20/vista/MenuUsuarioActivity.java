@@ -114,7 +114,7 @@ public class MenuUsuarioActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.POST_NOTIFICATIONS},
                     PERMISO_NOTIFICACIONES);
-            return; // Espera a que el usuario conceda permiso
+            return;
         }
 
         String cedula = sesionManager.getCedulaUsuario();
@@ -142,22 +142,6 @@ public class MenuUsuarioActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * private void mostrarDialogoCalificacion(EncomiendaDTO encomienda) {
-     * new AlertDialog.Builder(this)
-     * .setTitle("Encomienda entregada")
-     * .setMessage("Tu encomienda #" + encomienda.getId() + " ha sido entregada. ¿Deseas calificar al repartidor?")
-     * .setPositiveButton("Calificar", (dialog, which) -> {
-     * Intent intent = new Intent(MenuUsuarioActivity.this, CalificacionRepartidorActivity.class);
-     * intent.putExtra("idEncomienda", encomienda.getId());
-     * intent.putExtra("cedulaCliente", sesionManager.getCedulaUsuario());
-     * startActivity(intent);
-     * })
-     * .setNegativeButton("Cancelar", null)
-     * .setCancelable(false)
-     * .show();
-     * }
-     **/
     private void enviarNotificacionCalificacion(EncomiendaDTO encomienda) {
         Context ctx = this;
 

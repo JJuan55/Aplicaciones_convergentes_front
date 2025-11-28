@@ -53,12 +53,9 @@
             android:name=".vista.DetalleRepartidorActivity"
             android:exported="true"
             android:label="Detalle de repartidor" />
-
-
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAKSjO3hzf3wfBvyUR01WOdLWl6w7iV1m8" />
+            android:value="AIzaSyCIbolAAgsGqMAhgBySaZTC2mcuQem_VXA" />
 
         <activity
             android:name=".vista.SeleccionarUbicacionActivity"
